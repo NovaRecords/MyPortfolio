@@ -98,13 +98,16 @@ body {
 }
 
 .content-text h1 {
-    background: linear-gradient(45deg, #2f393c, #498192);
-    mix-blend-mode: screen;
-    /* color: #63696a; */
+    color: #63696a;
     font-size: 5.0rem;
     margin-top: 0.6rem;
     font-weight: 600;
     line-height: 0.9;
+}
+
+.content-text h1::before {
+    background: linear-gradient(45deg, #2f393c, #498192);
+    mix-blend-mode: screen;
 }
 
 .content-text h2 {
