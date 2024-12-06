@@ -98,7 +98,8 @@ body {
 }
 
 .content-text h1 {
-    color: linear-gradient(45deg, #2f393c, #498192);
+    background: linear-gradient(45deg, #2f393c, #498192);
+    mix-blend-mode: screen;
     /* color: #63696a; */
     font-size: 5.0rem;
     margin-top: 0.6rem;
