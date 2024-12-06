@@ -79,6 +79,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border: 2px solid #4a4a4a;
     flex-shrink: 0;
+    margin-top: -300px;
 }
 
 .content-text {
