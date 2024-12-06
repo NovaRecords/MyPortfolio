@@ -153,7 +153,6 @@ body {
 }
 
 .circle-background {
-    background: linear-gradient(45deg, #2f393c, #498192);
     color: white;
     padding: 15px 25px;
     border-radius: 30px;
