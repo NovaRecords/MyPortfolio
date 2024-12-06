@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="Pictures/Logo.png" alt="Logo" class="navbar-logo">
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="lebenslauf.html">Lebenslauf</a>
+            <a href="projekte.html">Projekte</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="content-text">
+            <div class="text-container">
+                <form class="contact-form" action="mailto:vitali.mack@gmx.de" method="POST" enctype="text/plain" onsubmit="return formatEmail(event)">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-Mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Betreff:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Nachricht:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Nachricht senden</button>
+                </form>
+            </div>
+        </div>
+        <div class="right-content">
+            <h1>Kontakt</h1>
+            <img src="Pictures/Mail.jpg" alt="Contact" class="profile-image">
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-icons">
+            <img src="Pictures/Icons-Telefon.png" class="footer-icon">
+            <p class="footer-text">Rufen Sie mich an:<br>+49 152 2190 4366</p>
+            <img src="Pictures/Icons-Geo.png" class="footer-icon">
+            <p class="footer-text">Kommen Sie vorbei:<br>Mooskamp 49<br>32547 Bad Oeynhausen</p>
+            <img src="Pictures/Icons-mail.png" class="footer-icon">
+            <p class="footer-text">Schreiben Sie mir:<br>vitali.mack@gmx.de</p>
+        </div>
+        <p class="copyright">&copy; 2024 My Portfolio Page</p>
+    </footer>
+    <script>
+        function formatEmail(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            const mailtoLink = `mailto:vitali.mack@gmx.de?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+`Name: ${name}
+Email: ${email}
+
+Nachricht:
+${message}`)}`;
+            
+            window.location.href = mailtoLink;
+            return false;
+        }
+    </script>
+</body>
+</html>
