@@ -108,7 +108,7 @@ body {
     line-height: 0.9;
 }
 
-.seiten-text h1 {
+.seiten-text {
     background: linear-gradient(45deg, #2f393c, #498192);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
