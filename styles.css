@@ -72,6 +72,19 @@ body {
     padding-top: 50px;
 }
 
+.main-content-leben {
+    min-height: calc(100vh - 240px);
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
 .profile-image {
     width: 500px;
     height: 500px;
