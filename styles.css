@@ -14,7 +14,7 @@ body {
     font-family: Arial, sans-serif;
     min-height: 100%;
     position: relative;
-    padding-bottom: 120px;
+    padding-bottom: 120px; /* Height of footer */
 }
 
 .navbar {
@@ -78,7 +78,7 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
     max-width: 1400px;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -124,6 +124,7 @@ body {
 }
 
 .content-text h1 {
+    /* color: #63696a;*/
     background: linear-gradient(45deg, #2f393c, #498192);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -139,7 +140,7 @@ body {
     -webkit-text-fill-color: transparent;
     font-size: 4.0rem;
     font-weight: 600;
-    line-height: 0.9;
+    line-height: 1.5;
 }
 
 .content-text h2 {
@@ -170,7 +171,7 @@ body {
 
 .content-text p {
     color: #63696a;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.2;
     margin-bottom: 0.5rem;
 }

@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio Page</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .collapsible-content {
+            display: none;
+            overflow: hidden;
+        }
+        
+        .circle-background {
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .circle-background::after {
+            content: ' ▼';
+            font-size: 0.8em;
+        }
+        
+        .circle-background.active::after {
+            content: ' ▲';
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -13,7 +33,7 @@
         </a>
         <div class="nav-links">
             <a href="index.html">Home</a>
-            <a href="lebenslauf.html">Lebenslauf</a>
+            <a href="lebenslauf.html">Mein Profil</a>
             <a href="projekte.html">Projekte</a>
             <a href="kontakt.html">Kontakt</a>
         </div>
@@ -22,65 +42,67 @@
     <main class="main-content-leben">
         <div class="content-text">
             <div class="text-container">
-                <h1><span class="seiten-text">Lebenslauf</span></h1>
+                <h1><span class="seiten-text">Mein Profil</span></h1>
+                <p>Mit mehr als 15 Jahren Berufserfahrung in der Medienbranche habe ich mir umfangreiche Kenntnisse in den Bereichen Bild- und Tonbearbeitung, Schnitt und Produktion angeeignet. Durch kontinuierliche Weiterbildung und die ständige Auseinandersetzung mit neuen Technologien konnte ich meine Fähigkeiten stetig ausbauen und an aktuelle Entwicklungen anpassen.</p>
+                <p>Derzeit erweitere ich mein berufliches Profil durch eine Weiterbildung im IT-Bereich, mit dem Ziel, ein zertifizierter Experte für Cloud- und Webentwicklung zu werden. Diese zusätzliche Qualifikation ermöglicht es mir, Medienprojekte nicht nur aus der kreativen Perspektive, sondern auch aus technischer Sicht zu gestalten. Das Zusammenspiel von Mediengestaltung und IT-Kompetenzen sehe ich als einen wertvollen Vorteil, um zukunftsorientierte und innovative Lösungen zu entwickeln.</p>
+                <p>In meinen bisherigen Projekten konnte ich unter Beweis stellen, dass ich sowohl die kreative als auch die technische Seite der Medienproduktion beherrsche. Diese Vielseitigkeit möchte ich weiter ausbauen und in meiner zukünftigen Arbeit verbinden, um Ihnen und Ihrem Unternehmen einen echten Mehrwert zu bieten.</p>
+                <p>Ich freue mich darauf, meine Expertise in neuen und spannenden Projekten einzubringen und mich auch in meiner neuen IT-Richtung weiterzuentwickeln. Lassen Sie uns gerne in einem persönlichen Gespräch über mögliche Zusammenarbeiten sprechen.</p>
                 <img src="Pictures/Icons-Navi.png" class="content-icon">
                 <h3><span class="circle-background">Ausbildung</span></h3>
                 <hr>
-                <h4>Schulabschluss<br>09.1981 - 06.1989</h4>
-                <p>In der zeit habe ich die Realschule in Gaj/Russland besucht, Abschluss: Mittlere Reife</p>
-                <h4>Musikhochschule<br>06.1989 - 06.1994</h4>
-                <p>Ausbildung als Künstler und Leiter des Kreativkollektivs im Fachbereich „Musikalische Estradenkunst mit Schwerpunkt Jazz, Pop und Rockmusik“ an der Orenburger Musikhochschule.</p>
+                <div class="collapsible-content">
+                    <h4>Schulabschluss<br>09.1981 - 06.1989</h4>
+                    <p>In der zeit habe ich die Realschule in Gaj/Russland besucht, Abschluss: Mittlere Reife</p>
+                    <h4>Musikhochschule<br>06.1989 - 06.1994</h4>
+                    <p>Ausbildung als Künstler und Leiter des Kreativkollektivs im Fachbereich „Musikalische Estradenkunst mit Schwerpunkt Jazz, Pop und Rockmusik" an der Orenburger Musikhochschule.</p>
+                </div>
                 
                 <img src="Pictures/Icons-Navi.png" class="content-icon">
-                <h3><span class="circle-background">Erfahrung</span></h3>
+                <h3><span class="circle-background">Werdegang</span></h3>
                 <hr>
-                <h4>Schichtleiter<br>08.1995 - 07.1997</h4>
-                <p>Schichtleiter bei McDonalds Restaurants in Herford, Minden, Löhne und Porta Westfalica.</p>
-                <h4>Vertriebsleiter<br>08.1997 - 04.1999</h4>
-                <p>Vertriebsleiter bei der Möbelfabrik "Held Küchen" in Porta Westfalica.</p>
-                <h4>Tonstudio "M.A.R.S. Records"<br>05.1999 - 05.2001</h4>
-                <p>Aufnahmeleiter, Komponist, Arrangement, Mixdown bei Tonstudio "M.A.R.S. Records" in Gütersloh.</p>
-                <h4>Tonstudio "MKS‐Media"<br>06.2001 - 12.2006</h4>
-                <p>Selbständig bei Tonstudio "MKS‐Media" in Porta Westfalica. Tonaufnahme, Komponist, Arrangement, Audiodesign, Mixdown, Webdesign.</p>
-                <h4>Projektmanager<br>01.2007 - 09.2009</h4>
-                <p>Projektmanager bei TV‐Sender "R1“ ‐ Der erste russischsprachiger Satelliten‐Fernsehsender in Europa aus Bielefeld.</p>
-                <h4>Gesellschafter und Geschäftsführer<br>10.2009 - 12.2016</h4>
-                <p>Selbständig bei „Luckyshop24 GmbH“. IT ‐ Online Shop. Gesellschafter und Geschäftsführer.</p>
-                <h4>Gesellschafter und Geschäftsführer<br>01.2017 - Aktuell</h4>
-                <p>Selbständig bei „SEEYOO TV GmbH“. Streaming Plattform. Gesellschafter und Geschäftsführer.</p>
-                <h4>IT-Weiterbildung<br>08.2024 - Aktuell</h4>
-                <p>Weiterbildung im IT-Bereich, mit dem Ziel, ein zertifizierter Experte für Cloud- und Webentwicklung zu werden.</p>
+                <div class="collapsible-content">
+                    <h4>Schichtleiter<br>08.1995 - 07.1997</h4>
+                    <p>Schichtleiter bei McDonalds Restaurants in Herford, Minden, Löhne und Porta Westfalica.</p>
+                    <h4>Vertriebsleiter<br>08.1997 - 04.1999</h4>
+                    <p>Vertriebsleiter bei der Möbelfabrik "Held Küchen" in Porta Westfalica.</p>
+                    <h4>Tonstudio "M.A.R.S. Records"<br>05.1999 - 05.2001</h4>
+                    <p>Aufnahmeleiter, Komponist, Arrangement, Mixdown bei Tonstudio "M.A.R.S. Records" in Gütersloh.</p>
+                    <h4>Tonstudio "MKS‐Media"<br>06.2001 - 12.2006</h4>
+                    <p>Selbständig bei Tonstudio "MKS‐Media" in Porta Westfalica. Tonaufnahme, Komponist, Arrangement, Audiodesign, Mixdown, Webdesign.</p>
+                    <h4>Projektmanager<br>01.2007 - 09.2009</h4>
+                    <p>Projektmanager bei TV‐Sender "R1" ‐ Der erste russischsprachiger Satelliten‐Fernsehsender in Europa aus Bielefeld.</p>
+                    <h4>Gesellschafter und Geschäftsführer<br>10.2009 - 12.2016</h4>
+                    <p>Selbständig bei „Luckyshop24 GmbH". IT ‐ Online Shop. Gesellschafter und Geschäftsführer.</p>
+                    <h4>Gesellschafter und Geschäftsführer<br>01.2017 - Aktuell</h4>
+                    <p>Selbständig bei „SEEYOO TV GmbH". Streaming Plattform. Gesellschafter und Geschäftsführer.</p>
+                    <h4>IT-Weiterbildung<br>08.2024 - Aktuell</h4>
+                    <p>Weiterbildung im IT-Bereich, mit dem Ziel, ein zertifizierter Experte für Cloud- und Webentwicklung zu werden.</p>
+                </div>
 
                 <img src="Pictures/Icons-Navi.png" class="content-icon">
                 <h3><span class="circle-background">Skills</span></h3>
                 <hr>
-                <h4>Proffessionelle Fähigkeiten</h4>
-                <p>Als Mediengestalter in Bild und Ton sowie Projektmanager bin ich verantwortlich für die Planung und Umsetzung von Medienproduktionen. Ich stelle medienspezifische Produktionssysteme auf, fertige Bild- und Tonaufnahmen an und bearbeite diese. Dabei achte ich darauf, sowohl redaktionelle als auch technische und gestalterische Anforderungen zu erfüllen.</p>
-            </div>
-
-        </div>
-        <div class="right-content">
-        <div class="content-text">
-            <div class="text-container">
-                
-                <img src="Pictures/Icons-Navi.png" class="content-icon">
-                <h3><span class="circle-background">Fähigkeiten</span></h3>
-                <hr>
-                <p>Video Aufnahme<br>Video Aufnahme<br>Video Bearbeitung<br>Post Production<br>Audio Komponierung<br>Audio Aufnahme<br>Audio Bearbeitung<br>Abmischung<br>Mastering<br></p>
-                
+                <div class="collapsible-content">
+                    <h4>Proffessionelle Fähigkeiten</h4>
+                    <p>Als Mediengestalter in Bild und Ton sowie Projektmanager bin ich verantwortlich für die Planung und Umsetzung von Medienproduktionen. Ich stelle medienspezifische Produktionssysteme auf, fertige Bild- und Tonaufnahmen an und bearbeite diese. Dabei achte ich darauf, sowohl redaktionelle als auch technische und gestalterische Anforderungen zu erfüllen.</p>
+                    <p><strong>Arten von Aktivitäten:</strong> Video Aufnahme, Video Aufnahme, Video Bearbeitung, Post Production, Audio Komponierung, Audio Aufnahme, Audio Bearbeitung, Abmischung, Mastering</p>
+                </div>
                 <img src="Pictures/Icons-Navi.png" class="content-icon">
                 <h3><span class="circle-background">Software</span></h3>
                 <hr>
-                <p>Final Cut<br>Adobe Premiere<br>Adobe After Effects<br>Stenberg Cubase<br>Logic Audio<br>Photoshop<br>u.v.m</p>
-                
+                <div class="collapsible-content">
+                    <h4>Bin vertraut mit folgenden Programmen:</h4>
+                    <p>Final Cut, Adobe Premiere, Adobe After Effects, Stenberg Cubase, Logic Audio, Photoshop, u.v.m</p>
+                </div>
                 <img src="Pictures/Icons-Navi.png" class="content-icon">
                 <h3><span class="circle-background">Sprachen</span></h3>
                 <hr>
-                <p>Russisch - in Wort und Schrift<br>Deutsch - in Wort und Schrift<br>Englisch - Grundkenntnisse</p>
+                <div class="collapsible-content">
+                    <h4>Proffessionelle Fähigkeiten</h4>
+                    <p>Russisch - in Wort und Schrift<br>Deutsch - in Wort und Schrift<br>Englisch - Grundkenntnisse</p>
+                </div>
             </div>
         </div>
-        </div>
-
     </main>
 
     <footer>
@@ -94,5 +116,24 @@
         </div>
         <p class="copyright">&copy; 2024 My Portfolio Page</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const collapsibles = document.querySelectorAll('.circle-background');
+            
+            collapsibles.forEach(button => {
+                button.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    const content = this.parentElement.nextElementSibling.nextElementSibling;
+                    
+                    if (content.style.display === 'block') {
+                        content.style.display = 'none';
+                    } else {
+                        content.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
