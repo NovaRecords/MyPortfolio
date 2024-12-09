@@ -83,7 +83,7 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     flex-wrap: wrap;
-    padding-top: 50px;
+    /*padding-top: 50px;*/
 }
 
 .profile-image {
@@ -174,7 +174,7 @@ body {
     color: #63696a;
     font-size: 1.1rem;
     line-height: 1.2;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .content-text p:last-child {
