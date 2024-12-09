@@ -63,13 +63,14 @@ body {
     min-height: calc(100vh - 240px);
     padding: 2rem;
     display: flex;
+    align-content: center;
     align-items: flex-start;
     justify-content: center;
     gap: 3rem;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: auto auto;
     flex-wrap: wrap;
-    padding-top: 50px;
+    /*padding-top: 50px;*/
 }
 
 .main-content-leben {
