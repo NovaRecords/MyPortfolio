@@ -118,6 +118,8 @@
         <p class="copyright">&copy; 2024 My Portfolio Page</p>
     </footer>
 
+    <button id="topButton" class="top-button" title="Nach oben">↑</button>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const collapsibles = document.querySelectorAll('.circle-background');
@@ -133,6 +135,26 @@
                         content.style.display = 'block';
                     }
                 });
+            });
+        });
+    </script>
+
+    <script>
+        // Back to Top Button Functionality
+        const topButton = document.getElementById('topButton');
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        };
+
+        topButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
             });
         });
     </script>
