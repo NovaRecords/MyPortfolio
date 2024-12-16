@@ -23,3 +23,63 @@ h1 {
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+.todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+}
+
+.todo-input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.todo-button {
+    background-color: #0078d7;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.todo-button:hover {
+    background-color: #005bb5;
+}
+
+.todo-list {
+    list-style: none;
+    font-size: 1rem;
+}
+
+li {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.checkbox {
+    size: 1rem;
+    margin-right: 10px;
+}
+
+.checkbox:checked + span {
+    text-decoration: line-through;
+}
+
+.delete-btn {
+    background-color: #d9534f;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+    padding: 5px 10px;
+}
