@@ -2,6 +2,7 @@ body {
     background-color: #f4f4f9;
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -34,11 +35,13 @@ h1 {
 
 .todo-input {
     border: 1px solid #ccc;
+    width: 80%;
     border-radius: 5px;
     padding: 10px;
 }
 
 .todo-button {
+    width: 20%;
     background-color: #0078d7;
     color: #ffffff;
     font-weight: bold;
@@ -64,8 +67,11 @@ li {
     padding: 10px;
 }
 
+span {
+    max-width: 85%;
+}
+
 .checkbox {
-    size: 1rem;
     margin-right: 10px;
 }
 
