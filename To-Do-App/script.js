@@ -3,8 +3,19 @@ const todoForm = document.querySelector('.todo-form');
 const todoInput = document.querySelector('.todo-input');
 const todoList = document.querySelector('.todo-list');
 
-// Array für Todos wird mit let deklariert, da sich der Inhalt ändern wird
-let todos = [];
+// Variable todos setzen
+let todos = JSON.parse(localStorage.getItem('todos')) || [];
+
+// Todos aus dem LocalStorage laden
+function loadTodos() {
+    todos = JSON.parse(localStorage.getItem('todos')) || [];
+    renderTodos();
+}
+
+// Funktion SaveTodos. Todos im Local Storage speichern
+function saveTodos() {
+    localStorage.setItem('todos', JSON.stringify(todos));
+}
 
 // Event Listener für das Formular
 todoForm.addEventListener('submit', (event) => {
@@ -28,6 +39,7 @@ todoForm.addEventListener('submit', (event) => {
     
     // Todo zum Array hinzufügen
     todos.push(todo);
+    saveTodos();
     
     // Eingabefeld leeren
     todoInput.value = '';
@@ -56,6 +68,7 @@ function renderTodos() {
         // Event Listener für Checkbox
         checkbox.addEventListener('change', () => {
             todo.completed = checkbox.checked;
+            saveTodos();
             renderTodos();
         });
         
@@ -75,6 +88,7 @@ function renderTodos() {
         // Event Listener für Lösch-Button
         deleteBtn.addEventListener('click', () => {
             todos = todos.filter(t => t.id !== todo.id);
+            saveTodos();
             renderTodos();
         });
         
@@ -87,3 +101,5 @@ function renderTodos() {
         todoList.appendChild(li);
     });
 }
+
+loadTodos();
