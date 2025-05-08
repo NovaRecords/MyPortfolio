@@ -15,3 +15,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// PDF Modal functions
+function openPdfModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = 'block';
+}
+
+function closePdfModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = 'none';
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+        closePdfModal(event.target.id);
+    }
+};
