@@ -38,6 +38,7 @@
             <img src="Pictures/linux-essentials.png" alt="Linux Essentials Badge" class="badge-image1" onclick="openPdfModal('leModal')" style="cursor: pointer;">
             <img src="Pictures/aws-graduate.png" alt="AWS Graduate Badge" class="badge-image2">
             <img src="Pictures/aws-practitioner.png" alt="AWS Practitioner Badge" class="badge-image3" onclick="openPdfModal('awsModal')" style="cursor: pointer;">
+            <img src="Pictures/AZ900.png" alt="Azure900 Badge" class="badge-image4" onclick="openPdfModal('azModal')" style="cursor: pointer;">
         </div>
 
         <!-- Linux Essentials PDF Modal -->
@@ -53,6 +54,14 @@
             <div class="modal-content">
                 <span class="close-button" onclick="closePdfModal('awsModal')">&times;</span>
                 <iframe id="awsPdfViewer" src="Pictures/AWS Certified Cloud Practitioner certificate.pdf#pagemode=none&view=Fit&view=FitH&toolbar=0&navpanes=0&scrollbar=0" width="100%" height="100%"></iframe>
+            </div>
+        </div>
+
+        <!-- AWS Certificate PDF Modal -->
+        <div id="azModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closePdfModal('azModal')">&times;</span>
+                <iframe id="azPdfViewer" src="Pictures/Leistungsnachweis-0352.png#pagemode=none&view=Fit&view=FitH&toolbar=0&navpanes=0&scrollbar=0" width="100%" height="100%"></iframe>
             </div>
         </div>
     </main>
