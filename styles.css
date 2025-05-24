@@ -442,12 +442,10 @@ footer {
     position: relative;
     background-color: #fefefe;
     padding: 0px;
-    width: 56%;
-    height: 90vh;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100vh;
+    height: 77vh;
     overflow: hidden;
-    margin: 5vh auto;
+    margin: 8vh auto;
 }
 
 .close-button {
