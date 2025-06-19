@@ -1,16 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Get current page path
+    // Get current page path and handle both root and index.html as home
     const currentPath = window.location.pathname;
+    const currentPage = currentPath.split('/').pop() || 'index.html';
     const navLinks = document.querySelectorAll('.nav-links a');
     
     navLinks.forEach(link => {
         // Get the href attribute
         const href = link.getAttribute('href');
         
-        // If the current path includes the href (excluding index.html for home page)
-        if (currentPath === '/' && href === 'index.html') {
+        // Reset active class
+        link.classList.remove('active');
+        
+        // Check if current page matches the link
+        if ((currentPage === 'index.html' && href === 'index.html') || 
+            (currentPage === '' && href === 'index.html')) {
             link.classList.add('active');
-        } else if (currentPath.includes(href) && href !== 'index.html') {
+        } else if (currentPage === href) {
             link.classList.add('active');
         }
     });
