@@ -39,6 +39,7 @@
             <img src="Pictures/aws-graduate.png" alt="AWS Graduate Badge" class="badge-image2">
             <img src="Pictures/aws-practitioner.png" alt="AWS Practitioner Badge" class="badge-image3" onclick="openPdfModal('awsModal')" style="cursor: pointer;">
             <img src="Pictures/AZ900.png" alt="Azure900 Badge" class="badge-image4" onclick="openPdfModal('azModal')" style="cursor: pointer;">
+            <img src="Pictures/Techstarter.png" alt="Techstarter Badge" class="badge-image5" onclick="openPdfModal('techModal')" style="cursor: pointer;">
         </div>
 
         <!-- Linux Essentials PDF Modal -->
@@ -57,11 +58,19 @@
             </div>
         </div>
 
-        <!-- AWS Certificate PDF Modal -->
+        <!-- AZ900 Certificate PDF Modal -->
         <div id="azModal" class="modal">
             <div class="modal-content">
                 <span class="close-button" onclick="closePdfModal('azModal')">&times;</span>
                 <iframe id="azPdfViewer" src="Pictures/Leistungsnachweis.pdf#pagemode=none&view=Fit&view=FitH&toolbar=0&navpanes=0&scrollbar=0"></iframe>
+            </div>
+        </div>
+
+        <!-- Techstarter PDF Modal -->
+        <div id="techModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closePdfModal('techModal')">&times;</span>
+                <iframe id="techPdfViewer" src="Pictures/Techstarter.pdf#zoom=page-width&toolbar=0&navpanes=0&scrollbar=0"></iframe>
             </div>
         </div>
     </main>

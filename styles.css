@@ -419,10 +419,18 @@ footer {
     transition: transform 0.3s ease;
 }
 
+.badge-image5 {
+    margin-top: 15px;
+    width: 110px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
 .badge-image1:hover,
 .badge-image2:hover,
 .badge-image3:hover,
-.badge-image4:hover {
+.badge-image4:hover,
+.badge-image5:hover {
     transform: scale(1.1);
 }
 
